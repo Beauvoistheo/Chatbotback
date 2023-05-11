@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1 ,
+      "question": "Salut",
+      "answer": "salut mon reuf"
+    },
+    {
+      "id": 2,
+      "question": "Bonjour",
+      "answer": "bonjaour mon reuf"
+    },
+    {
+      "id": 3,
+      "question": "ça va ?",
+      "answer": "trql et toi mon reuf"
+    },
+    {
+      "id": 4,
+      "question": "Quoi",
+      "answer": "Feur"
+    }
+  ]
