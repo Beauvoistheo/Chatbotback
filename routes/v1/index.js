@@ -1,7 +1,9 @@
+const bodyParser = require("body-parser")
 const express =require("express")
 const router=express.Router()
 const dialogcontroller= require('../../controller/v1/index')
 
+const jsonParser = bodyParser.json()
 /**
  * @swagger
  * /api/v1/:
@@ -33,8 +35,10 @@ router.get("/test",dialogcontroller.test)
  *        description: A successful response
  */
 
-router.get("/dialog/question",dialogcontroller.findAllQuestion)
-
+router.get("/dialog",dialogcontroller.findAllQuestion)
+router.post("/dialog", jsonParser, dialogcontroller.createchat)
+router.put("/dialog", jsonParser, dialogcontroller.updatechat)
+router.delete("/dialog", jsonParser, dialogcontroller.deletechat)
 /**
  * @swagger
  * /api/v1/dialog/answer/{id}:
